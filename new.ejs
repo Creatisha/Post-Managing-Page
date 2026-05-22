@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Post</title>
+    <link href="/css/new_style.css" rel="stylesheet">
+</head>
+<body>
+    <form method="post" action="/posts/new" enctype="multipart/form-data" class="form-container">
+        <input type="text" placeholder="username" name="username">
+        <textarea  placeholder="Enter caption" name="caption" rows="5" cols="30"></textarea>
+        <input type="file" name="image">
+        <button class="button">Add Post</button>
+    </form>
+</body>
+</html>

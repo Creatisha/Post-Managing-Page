@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posts</title>
+    <link href="/css/style.css" rel="stylesheet" >
+</head>
+<body>
+    <% for(post of posts){ %>
+        <!-- <h3> id : <%= post.id %></h3> -->
+        <div class="post">
+            <h3 class="username"> <%= post.username %></h3>
+            <img class="images" src=" <%= post.image %>" >
+            <p class="caption"> <%= post.caption %></p>
+            <a href="/posts/<%= post.id %>" id="see_more"> see more</a>
+
+            <div class="btn_container">
+                <a href="/posts/<%= post.id %>/edit" class="button">edit post</a>
+            
+
+            <form method="post" action="/posts/<%= post.id %>?_method=DELETE" >
+                <button class="button">Delete Post</button>
+            </form>
+            </div>
+        </div>
+
+    <% } %>
+
+        <a href="/posts/new" class="button" id="newPost_btn">Add new post</a>
+</body>
+</html>

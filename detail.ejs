@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post in Detail</title>
+    <link href="/css/style.css" rel="stylesheet" >
+</head>
+<body>
+    <h2 id="heading_detail">Post in Detail</h2>
+    <div class="post">
+            <h3 class="username"> <%= post.username %></h3>
+            <img class="images" src=" <%= post.image %>" >
+            <p class="caption"> <%= post.caption %></p>
+    </div>
+
+<a href="/posts" class="button" id="back_btn">Back</a>
+</body>
+</html>
