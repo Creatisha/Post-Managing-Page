@@ -67,6 +67,10 @@ let posts = [
     }
 ]
 
+app.get("/", (req, res) => {
+    res.render("instagram.ejs");
+});
+
 app.get("/posts", (req, res) => {
     res.render("instagram", { posts });
 });
