@@ -117,6 +117,6 @@ app.delete("/posts/:id", (req, res) => {
     res.redirect("/posts");
    }); 
 
-app.listen(port, () => {
+app.listen(process.env.PORT || 3000, () => {
     console.log(`app is listening on port ${port}`);
 });
